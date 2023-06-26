@@ -1,0 +1,7 @@
+{% for field in available_fields %}
+    <h3>{{ field.name }}</h3>
+    <p>Owner: {{ field.owner.name }}</p>
+    <p>Available datetime: {{ field.datetime }}</p>
+{% empty %}
+    <p>No available fields.</p>
+{% endfor %}
